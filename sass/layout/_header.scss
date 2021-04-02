@@ -35,8 +35,9 @@
 .contact__list:not(:last-child) {
   margin-right: 50px;
 }
-.navigation-link:hover,
-.navigation-link:focus {
+
+.navigation-list__link:hover,
+.navigation-list__link:focus {
   color: var(--accent-color);
 }
 .contact {
