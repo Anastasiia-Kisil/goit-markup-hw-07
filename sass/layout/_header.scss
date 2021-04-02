@@ -1,45 +1,46 @@
-.header__container {
-  display: flex;
-  align-items: center;
-}
 .header {
   border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 }
+
 .navigation {
   display: flex;
   align-items: center;
+
+  &__link {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    padding-top: var(--link-pt);
+    padding-bottom: var(--link-pb);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .nav-container {
   display: flex;
   align-items: center;
 }
-.navigation__link {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  padding-top: var(--link-pt);
-  padding-bottom: var(--link-pb);
-  transition: color 250ms var(--timing-function);
-}
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
-}
-.contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
+
 .contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
-}
 .contact {
   display: flex;
   align-items: center;
@@ -50,31 +51,39 @@
   color: var(--text-color);
   padding-top: var(--link-pt);
   padding-bottom: var(--link-pb);
+  margin-left: auto;
   transition: color 250ms var(--timing-function);
+
+  &__list:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    color: var(--text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
-.contact__link {
-  color: var(--text-color);
-}
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color);
-}
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+
 .current {
   color: var(--accent-color);
   position: relative;
-}
-.current::after {
-  position: absolute;
-  display: block;
-  bottom: -1px;
-  left: 0;
-  content: '';
-  width: 100%;
-  background: var(--accent-color);
-  border-radius: 2px;
-  height: 4px;
+
+  &::after {
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    background: var(--accent-color);
+    border-radius: 2px;
+    height: 4px;
+  }
 }
