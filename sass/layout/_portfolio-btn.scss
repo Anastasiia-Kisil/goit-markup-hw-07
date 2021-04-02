@@ -1,4 +1,10 @@
 .portfolio {
+  &__btn-list {
+    display: flex;
+    margin-bottom: 34px;
+    justify-content: center;
+  }
+
   &__btn {
     display: inline-block;
     font-weight: 500;
@@ -25,11 +31,6 @@
     }
   }
 
-  &__btn-list {
-    display: flex;
-    margin-bottom: 34px;
-    justify-content: center;
-  }
   &__btn-all {
     background-color: var(--accent-color);
     color: var(--back-color);
