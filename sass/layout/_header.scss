@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
 }
-.navigation-list__link {
+.navigation__link {
   display: inline-block;
   font-weight: 500;
   font-size: 14px;
@@ -24,7 +24,7 @@
   padding-bottom: var(--link-pb);
   transition: color 250ms var(--timing-function);
 }
-.navigation-list__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 .contact {
@@ -36,8 +36,8 @@
   margin-right: 50px;
 }
 
-.navigation-list__link:hover,
-.navigation-list__link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
 .contact {
