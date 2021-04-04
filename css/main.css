@@ -86,7 +86,8 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -108,7 +109,8 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social__link:hover, .social__link:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--accent-color);
   color: var(--back-color);
 }
@@ -308,7 +310,8 @@ body {
   transition: background 250ms var(--timing-function);
 }
 
-.form__button:hover, .form__button:focus {
+.form__button:hover,
+.form__button:focus {
   background: #188ce8;
 }
 
@@ -332,7 +335,10 @@ body {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
-  transition: background-image 250ms var(--timing-function), background-color 250ms var(--timing-function), border-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: background-image 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .form__check-link {
@@ -405,7 +411,11 @@ body {
   max-width: 1600px;
   height: 600px;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img_bg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/img_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0;
@@ -452,7 +462,8 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.navigation__link:hover, .navigation__link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
 
@@ -489,9 +500,14 @@ body {
 
 .contact__link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding-top: var(--link-pt);
+  padding-bottom: var(--link-pb);
 }
 
-.contact__link:hover, .contact__link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -572,7 +588,8 @@ body {
   margin-left: 30px;
   width: 270px;
   background-color: var(--back-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -621,7 +638,8 @@ body {
   transition: border-color 250ms var(--timing-function);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -646,7 +664,8 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
-.footer__contact-link:hover, .footer__contact-link:focus {
+.footer__contact-link:hover,
+.footer__contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -719,7 +738,8 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer-social__link:hover, .footer-social__link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -799,20 +819,24 @@ body {
   border-radius: 4px;
   background-color: #f5f4fa;
   border: none;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.portfolio__btn:hover, .portfolio__btn:focus {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   background-color: var(--accent-color);
   color: var(--back-color);
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio__btn-all {
   background-color: var(--accent-color);
   color: var(--back-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio__items {
@@ -824,8 +848,10 @@ body {
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.example__card:hover, .example__card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.example__card:hover,
+.example__card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example__title {
