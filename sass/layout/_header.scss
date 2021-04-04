@@ -55,6 +55,7 @@
   &__list:not(:last-child) {
     margin-right: 50px;
   }
+
   &__link {
     color: var(--text-color);
     display: flex;
